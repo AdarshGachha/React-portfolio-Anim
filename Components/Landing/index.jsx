@@ -28,7 +28,7 @@ const index = () => {
             x: "-500px",
         });
         requestAnimationFrame(animate);
-    });
+    },[]);
 
     const animate = () => {
         if (xPercent < -100) {

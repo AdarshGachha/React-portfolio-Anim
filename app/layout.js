@@ -2,13 +2,13 @@ import './globals.css'
 
 
 export const metadata = {
-  title: 'R9 kuch kuch hota hai',
-  description: 'Savlon weds Aishwarya',
+  title: 'R9-AD',
+  description: 'Adarsh',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body>{children}</body>
     </html>
   )
