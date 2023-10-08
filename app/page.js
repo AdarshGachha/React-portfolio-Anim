@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     const locomotivescroll = new LocomotiveScroll();
-  })
+  },[])
   return (
     <main className={styles.main}>
       <Landing />
