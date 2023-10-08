@@ -21,7 +21,8 @@ const index = () => {
             scrollTrigger: {
                 trigger: document.documentElement,
                 start: 0,
-                end: window.innerHeight,
+                
+                end: (window && window.innerHeight) ,
                 scrub: 0.25,
                 onUpdate: (e) => (direction = e.direction * -1),
             },

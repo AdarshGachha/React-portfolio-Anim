@@ -42,13 +42,16 @@ const index = ({ modal, projects }) => {
             ease: "power3",
         });
 
-        window.addEventListener("mousemove", (e) => {
-            const { pageX, pageY } = e;
-            xMoveContainer(pageX);
-            yMoveContainer(pageY);
-            xMoveCursor(pageX);
-            yMoveCursor(pageY);
-        });
+        if (typeof window !== 'undefined') {
+            window.addEventListener("mousemove", (e) => {
+                const { pageX, pageY } = e;
+                xMoveContainer(pageX);
+                yMoveContainer(pageY);
+                xMoveCursor(pageX);
+                yMoveCursor(pageY);
+            });
+        }
+        
     }, []);
 
     return (
